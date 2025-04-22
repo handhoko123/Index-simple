@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buka di Browser</title>
+</head>
+<body style="font-family: sans-serif; padding: 40px; background: #fffbe6; color: #333;">
+  <h2>Halo!</h2>
+  <p>Untuk melanjutkan, silakan klik <strong>ikon titik tiga</strong> di pojok kanan atas TikTok,</p>
+  <p>lalu pilih <strong>"Buka di browser"</strong>.</p>
+  <p>Setelah dibuka di browser, kamu akan otomatis diarahkan ke halaman Shopee.</p>
+  <p>Terima kasih!</p>
+
+  <script>
+    const isInTikTok = navigator.userAgent.includes("TikTok");
+    if (!isInTikTok) {
+      window.location.href = "https://collshp.com/mychart.id";
+    }
+  </script>
+</body>
+</html>
